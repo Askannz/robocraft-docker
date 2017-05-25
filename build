@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pgrep dockerd &> /dev/null || echo "The Docker daemon is not running. Please install Docker and enable the Docker service." ; exit
+
+docker pull askannz/robocraft
